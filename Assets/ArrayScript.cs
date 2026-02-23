@@ -10,6 +10,13 @@ public class ArrayScript : MonoBehaviour
         Debug.Log("The second item is: "+playerItems[1]);
         Debug.Log("The third item is: "+playerItems[2]);
         Debug.Log("The fourth item is: "+playerItems[3]);
+        int index = 0;
+        // for each item in playerItems
+        foreach ( string item in playerItems)
+        {
+            Debug.Log($"[{index}]: " + item); // print out the name of the item and its index
+            index++; // increment the index
+        }
     }
 
     // Update is called once per frame
